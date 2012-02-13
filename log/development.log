@@ -1,0 +1,305 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-02-13 13:39:17 +0900
+Served asset /rails.png - 304 Not Modified (21ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-02-13 13:46:03 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (98.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (141.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateItems (20120213045820)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateItems (20120213045820)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateItems (20120213045820)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "name" varchar(255), "description" text, "price" integer, "canceled" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120213045820')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("items")[0m
+
+
+Started GET "/item" for 127.0.0.1 at 2012-02-13 14:06:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/item"):
+  
+
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-02-13 14:06:31 +0900
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-13 14:07:35 +0900
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/item" for 127.0.0.1 at 2012-02-13 14:07:43 +0900
+
+ActionController::RoutingError (No route matches [GET] "/item"):
+  
+
+Rendered C:/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-02-13 14:08:06 +0900
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Rendered items/index.html.erb within layouts/application (1.0ms)
+Compiled application.css  (1ms)  (pid 3892)
+Compiled items.css  (6ms)  (pid 3892)
+Compiled scaffolds.css  (11ms)  (pid 3892)
+Compiled application.js  (39ms)  (pid 3892)
+Compiled jquery.js  (120ms)  (pid 3892)
+Compiled jquery_ujs.js  (5ms)  (pid 3892)
+Compiled items.js  (813ms)  (pid 3892)
+Completed 200 OK in 1178ms (Views: 1177.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-02-13 14:08:07 +0900
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-02-13 14:08:07 +0900
+Served asset /items.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-02-13 14:08:07 +0900
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:07 +0900
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:07 +0900
+Served asset /items.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:08 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:08 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2012-02-13 14:08:11 +0900
+  Processing by ItemsController#new as HTML
+Rendered items/_form.html.erb (9.0ms)
+Rendered items/new.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:12 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:12 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2012-02-13 14:08:20 +0900
+  Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cmzy7eMHk0dTNgCIW4LfcIr1xiN1vW5mg5X3PDM4Y5U=", "item"=>{"code"=>"001001", "name"=>"", "description"=>"", "price"=>"", "canceled"=>""}, "commit"=>"Create Item"}
+  [1m[35mSQL (138.0ms)[0m  INSERT INTO "items" ("canceled", "code", "created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["canceled", nil], ["code", "001001"], ["created_at", Mon, 13 Feb 2012 05:08:20 UTC +00:00], ["description", ""], ["name", ""], ["price", nil], ["updated_at", Mon, 13 Feb 2012 05:08:20 UTC +00:00]]
+Redirected to http://localhost:3000/items/1
+Completed 302 Found in 262ms
+
+
+Started GET "/items/1" for 127.0.0.1 at 2012-02-13 14:08:20 +0900
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered items/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:20 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-02-13 14:08:24 +0900
+  Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" 
+Rendered items/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:24 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:24 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:24 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2012-02-13 14:08:26 +0900
+  Processing by ItemsController#new as HTML
+Rendered items/_form.html.erb (8.0ms)
+Rendered items/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:26 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:26 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:26 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2012-02-13 14:08:53 +0900
+  Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cmzy7eMHk0dTNgCIW4LfcIr1xiN1vW5mg5X3PDM4Y5U=", "item"=>{"code"=>"001002", "name"=>"尿", "description"=>"ジョロジョロ", "price"=>"10", "canceled"=>"1"}, "commit"=>"Create Item"}
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("canceled", "code", "created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["canceled", true], ["code", "001002"], ["created_at", Mon, 13 Feb 2012 05:08:53 UTC +00:00], ["description", "ジョロジョロ"], ["name", "尿"], ["price", 10], ["updated_at", Mon, 13 Feb 2012 05:08:53 UTC +00:00]]
+Redirected to http://localhost:3000/items/2
+Completed 302 Found in 204ms
+
+
+Started GET "/items/2" for 127.0.0.1 at 2012-02-13 14:08:53 +0900
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered items/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:53 +0900
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:53 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:53 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-02-13 14:08:56 +0900
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Rendered items/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:56 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:56 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:56 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/1" for 127.0.0.1 at 2012-02-13 14:08:59 +0900
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered items/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:59 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:59 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:08:59 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-02-13 14:09:00 +0900
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Rendered items/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/2" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered items/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:01 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-02-13 14:09:02 +0900
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Rendered items/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:03 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:03 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-02-13 14:09:03 +0900
+Served asset /application.js - 304 Not Modified (0ms)
